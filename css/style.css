@@ -192,10 +192,34 @@ h3 {
 
 /** Pagina del Producto **/
 @media (min-width: 768px) {
-    .camisa {
+    .juego {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+    }
+    .juego__imagen{
+        height: 100%;
+        width: 50%;
+        margin-left: 20%;
+    }
+    .juego__contenido{
+        margin-right: 10%;
+    }
+}
+
+@media (min-width: 768px) {
+    .juego {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .juego__imagen{
+        height: 100%;
+        width: 50%;
+        margin-left: 20%;
+    }
+    .juego__contenido{
+        margin-right: 10%;
     }
 }
 
@@ -226,3 +250,4 @@ h3 {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+
