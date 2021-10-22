@@ -170,7 +170,7 @@ h3 {
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
-       width: 80%;
+       width: 90%;
        grid-column: 2 / 3;
     }
 }
