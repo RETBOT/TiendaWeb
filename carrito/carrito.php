@@ -24,21 +24,31 @@
     <main class="contenedor">
         <h1>Productos</h1>
         <div class="grid">
-        <div class="producto">
+        
         <?php
+        $cantJuegos=0;
+        $juego = ' ';
+        $cantidad = ' ';
+        $precio = 0;
+        $imagen = ' '; 
+        if($juego = $_GET['Juego']){
+            $cantJuegos++;
+        }
         $juego = $_GET['Juego'];
         $cantidad = $_GET['Cantidad'];
         $precio = $_GET['Precio'];
         $imagen = $_GET['Imagen'];
         $total=0;               
         $total = $precio*$cantidad;
-        echo "<a href=../prod/Minecraft.html>";
+        
+        if($cantJuegos!=0){
+        echo "<div class=producto>";
         echo "<img class=producto__imagen src=../img/",$imagen,".jpg alt=imagen juego>";
         echo "<div class=producto__informacion>";
         echo "<p class=producto__nombre>",$juego,"</p>";
         echo "<p class=producto__precio>$",$total,".00</p>";
         echo "</div>";
-        echo "</a>";
+        }
         ?>
                 <!--<a href="../prod/Minecraft.html">
                     <img class="producto__imagen" src="../img/1.jpg" alt="imagen juego">
