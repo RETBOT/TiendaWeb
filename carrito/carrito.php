@@ -1,16 +1,3 @@
-<?php
-$juego = $_GET['Juego'];
-$cantidad = $_GET['Cantidad'];
-$precio = $_GET['Precio'];
-$total=0;
-
-$total = $precio*$cantidad;
-
-echo " juego = ", $juego;
-echo " cantidad = ", $cantidad;
-echo "total = ", $total;
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +23,34 @@ echo "total = ", $total;
     </nav>
     <main class="contenedor">
         <h1>Productos</h1>
-        <div class="grid"></div>
+        <div class="grid">
+        <div class="producto">
+        <?php
+        $juego = $_GET['Juego'];
+        $cantidad = $_GET['Cantidad'];
+        $precio = $_GET['Precio'];
+        $imagen = $_GET['Imagen'];
+        $total=0;               
+        $total = $precio*$cantidad;
+        echo "<a href=../prod/Minecraft.html>";
+        echo "<img class=producto__imagen src=../img/",$imagen,".jpg alt=imagen juego>";
+        echo "<div class=producto__informacion>";
+        echo "<p class=producto__nombre>",$juego,"</p>";
+        echo "<p class=producto__precio>$",$total,".00</p>";
+        echo "</div>";
+        echo "</a>";
+        ?>
+                <!--<a href="../prod/Minecraft.html">
+                    <img class="producto__imagen" src="../img/1.jpg" alt="imagen juego">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Minecraft</p>
+                        <p class="producto__precio"></p>
+                    </div>
+                </a>
+            </form>
+            </div>  .producto-->
+        </div>
+
 
     </main>
 
