@@ -160,10 +160,9 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
-}
-
-.nosotros__contenido{
-    margin-left: 2rem;
+    .nosotros__contenido{
+        margin-left: 2rem;
+    }
 }
 
 .nosotros__imagen {
@@ -172,6 +171,7 @@ h3 {
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
+        margin-right: 2rem;
        grid-column: 2 / 3;
     }
 }
