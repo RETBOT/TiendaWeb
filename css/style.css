@@ -163,11 +163,11 @@ h3 {
 }
 
 .nosotros__contenido{
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .nosotros__imagen {
-    margin-left: 1rem;
+    margin-right: 2rem;
     grid-row: 1 / 2;
 }
 @media (min-width: 768px) {
