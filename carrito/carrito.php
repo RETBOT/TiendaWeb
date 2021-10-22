@@ -1,3 +1,16 @@
+<?php
+$juego = $_GET['Juego'];
+$cantidad = $_GET['Cantidad'];
+$precio = $_GET['Precio'];
+$total=0;
+
+$total = $precio*$cantidad;
+
+echo " juego = ", $juego;
+echo " cantidad = ", $cantidad;
+echo "total = ", $total;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +37,7 @@
     <main class="contenedor">
         <h1>Productos</h1>
         <div class="grid"></div>
+
     </main>
 
     <footer class="footer">
