@@ -161,7 +161,13 @@ h3 {
         column-gap: 2rem;
     }
 }
+
+.nosotros__contenido{
+    margin-left: 1rem;
+}
+
 .nosotros__imagen {
+    margin-left: 1rem;
     grid-row: 1 / 2;
 }
 @media (min-width: 768px) {
