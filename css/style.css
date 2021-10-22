@@ -161,7 +161,7 @@ h3 {
         column-gap: 2rem;
     }
     .nosotros__contenido{
-        margin-left: 2rem;
+        border-radius: 1rem;
     }
 }
 
@@ -170,7 +170,7 @@ h3 {
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
-       width: 95%;
+       border-radius: 1rem;
        grid-column: 2 / 3;
     }
 }
