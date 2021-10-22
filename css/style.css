@@ -166,12 +166,11 @@ h3 {
 }
 
 .nosotros__imagen {
-    margin-right: 2rem;
     grid-row: 1 / 2;
 }
 @media (min-width: 768px) {
     .nosotros__imagen {
-        margin-right: 4rem;
+       width: 80%;
        grid-column: 2 / 3;
     }
 }
